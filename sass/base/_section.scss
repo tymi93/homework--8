@@ -1,0 +1,36 @@
+@media screen and (max-width: 1199px){
+    .key-section{
+        padding: 60px 0;}
+    .work-section{
+        padding-bottom: 60px;}
+    .client-section{
+    padding: 60px 0;}
+    .team-section{background-color: var(--top-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0;
+      }
+    .portfolio-section{
+        padding: 60px 0;
+      }
+}
+
+
+@media screen and (min-width: 1200px){
+.key-section{
+    padding: 94px 0;}
+.work-section{
+    padding-bottom: 94px;}
+.client-section{
+padding: 94px 0;}
+.team-section{background-color: var(--top-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 94px 0;
+  }
+  .portfolio-section{
+    padding: 94px 0;
+  }
+}

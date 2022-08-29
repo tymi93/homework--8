@@ -1,0 +1,64 @@
+.client-title{
+  @include font (28px, 700, 1.17);
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.client-list{
+  display: flex;
+  gap: 30px;
+}
+
+.client-link{
+@extend %align;
+border:1px solid #AFB1B8;
+border-radius: 4%;
+background-color: #FFFFFF;
+transition: border var(--transition);
+    &:hover,
+    &:focus{
+      border:1px solid var(--main-color);
+  }
+}
+
+
+.client-link-ikon{
+fill: #AFB1B8;
+transition: fill var(--transition);
+    .client-link:hover &,
+    .client-link:focus &{
+      fill: var(--main-color);
+    }
+}
+  
+@media screen and (max-width: 767px){
+    .client-list{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .client-link{
+        width: 210px;
+        height: 92px;}
+    }
+  
+@media screen and (min-width: 768px){
+  .client-list{
+    flex-wrap: wrap;
+  }
+  .client-link{
+      width: 226px;
+      height: 92px;}
+
+}
+  
+@media screen and (min-width: 1200px){
+  .client-title{
+    @include font (36px, 700, 1.17);
+    margin-bottom: 50px;}
+    .client-link{
+      width: 170px;
+      height: 92px;}
+  }
