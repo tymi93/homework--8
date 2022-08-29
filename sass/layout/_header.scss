@@ -85,7 +85,7 @@
     .logo{
       @include font (24px, 700, 1.19);}
     
-      .current::after{
+      .current.navigate::after{
       background-color: var(--main-color);
       position: absolute;
       content: "";
